@@ -34,16 +34,16 @@ class CarInterface(CarInterfaceBase):
     ret.steerRateCost = 0.5 if ret.hasZss else 1.0
 
     # Improved longitudinal tune
-    if candidate in [CAR.COROLLA_TSS2, CAR.COROLLAH_TSS2, CAR.RAV4_TSS2, CAR.RAV4H_TSS2, CAR.PRIUS_TSS2]:
+    if candidate in [CAR.COROLLA_TSS2, CAR.COROLLAH_TSS2, CAR.RAV4_TSS2, CAR.RAV4H_TSS2]:
       ret.longitudinalTuning.deadzoneBP = [0., 8.05]
       ret.longitudinalTuning.deadzoneV = [.0, .14]
-      ret.longitudinalTuning.kpBP = [0., 5., 20., 35., 55., 0.1]
-      ret.longitudinalTuning.kpV = [1.4, 1.3, 0.6, 0.3]
+      ret.longitudinalTuning.kpBP = [0., 5., 20.]
+      ret.longitudinalTuning.kpV = [1.3, 1.0, 0.7]
       ret.longitudinalTuning.kiBP = [0., 5., 12., 20., 27.]
       ret.longitudinalTuning.kiV = [.35, .23, .20, .17, .1]
       ret.stoppingBrakeRate = 0.1 # reach stopping target smoothly
       ret.startingBrakeRate = 2.0 # release brakes fast
-      ret.startAccel = 1.4 # Accelerate from 0 faster
+      ret.startAccel = 1.2 # Accelerate from 0 faster
     else:
       # Default longitudinal tune
       ret.longitudinalTuning.deadzoneBP = [0., 9.]
