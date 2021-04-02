@@ -13,7 +13,7 @@ Version 0.8.2 (2021-02-26)
  * Audi A3 2015 and 2017 support thanks to keeleysam!
  * Nissan Altima 2020 support thanks to avolmensky!
  * Lexus ES Hybrid 2018 support thanks to TheInventorMan!
- * Toyota Camry Hybrid 2021 support thanks to alancyau!
+ * Toyota Camry Hybrid 2021 support thanks to alancyau.!
 
 Version 0.8.1 (2020-12-21)
 ========================
